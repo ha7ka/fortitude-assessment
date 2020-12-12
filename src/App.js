@@ -28,17 +28,17 @@ function App() {
 
 function ApiResponse({data}){  
   if(Array.isArray(data)) 
-  return data.map((item, index)=>(
-      <React.Fragment key={item.id}>
-          <ul>
-            <li>{index + ' : ['}</li>
-              <ul>
-                <ApiResponse data={item}/>
-              </ul>
-            <li>{']'}</li>
-        </ul>
-      </React.Fragment>
-  ))
+    return data.map((item, index)=>(
+        <React.Fragment key={item.id}>
+            <ul>
+              <li>{index + ' : ['}</li>
+                <ul>
+                  <ApiResponse data={item}/>
+                </ul>
+              <li>{']'}</li>
+          </ul>
+        </React.Fragment>
+    ))
 
   //json
   if((data !== null) && ( typeof data === 'object'))
