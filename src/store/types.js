@@ -1,0 +1,10 @@
+export const SET_DATA_LOADING = 'SET_DATA_LOADING';
+export const UPDATE_DATA = 'UPDATE_REPOSITORIES';
+export const UPDATE_DATA_ERROR = 'UPDATE_REPOSITORIES_ERROR';
+
+
+
+
+
+
+
